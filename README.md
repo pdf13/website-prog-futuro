@@ -2,7 +2,10 @@
 { Programadores do Futuro }
 <br/>
 <br/>
-
+<img src="https://img.shields.io/github/issues/pdf13/website-prog-futuro.svg"/>
+<img src="https://img.shields.io/github/issues-pr/pdf13/website-prog-futuro.svg"/>
+<img src="https://img.shields.io/node/v/pdf13/website-prog-futuro.svg"/>
+</h1>
 <p align="center">
   <a href="#configuração">Configuração</a> •
   <a href="#desenvolvimento">Desenvolvimento</a> •
@@ -11,9 +14,6 @@
 
 ### Status
 
-<img src="https://img.shields.io/github/issues/pdf13/website-prog-futuro.svg"/>
-<img src="https://img.shields.io/github/issues-pr/pdf13/website-prog-futuro.svg"/>
-<img src="https://img.shields.io/node/v/pdf13/website-prog-futuro.svg"/>
 
 ### Configuração
 
