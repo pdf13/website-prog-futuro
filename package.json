@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ./pages/*"
+    "lint": "eslint ./"
   },
   "keywords": [
     "next",
@@ -26,9 +26,11 @@
     }
   },
   "dependencies": {
-    "next": "^7.0.2",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "bootstrap": "^4.3.1",
+    "next": "8.0.3",
+    "react": "16.8.3",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "16.8.3"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
