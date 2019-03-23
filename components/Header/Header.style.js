@@ -15,7 +15,7 @@ const bgStyle = css.resolve`
 const navBarStyle = css.resolve``
 
 const heroStyle = css.resolve`
-  margin-top: 16vh;
+  margin: 16vh auto 5vh;
 
   @media (min-width: 768px) {
     margin-top: 25vh;
