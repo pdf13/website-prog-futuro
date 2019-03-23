@@ -21,9 +21,6 @@ function Title (props) {
     h4: H4Style
   }
 
-  console.log(otherProps);
-  
-
   return (
     <Component className={`${titleClassName} ${stylesMap[as].className} ${arrows ? decoratedTitleStyle.className : ''}`} {...otherProps}>
       { children }
