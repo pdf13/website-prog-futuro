@@ -5,5 +5,8 @@
         "src": "package.json",
         "use": "@now/static-build"
     }],
-    "alias": ["programadoresdofuturo.org"]
+    "alias": [
+        "www.programadoresdofuturo.org",
+        "programadoresdofuturo.org"
+    ]
 }
