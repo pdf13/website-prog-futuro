@@ -1,11 +1,11 @@
 import React from 'react'
 import createComponentFromTag from 'react-create-component-from-tag-prop'
-import { node, oneOf } from 'prop-types'
+import { node, string, oneOf } from 'prop-types'
 
 import { titleStyle, decoratedTitleStyle, H1Style, H2Style, H3Style, H4Style } from './Title.style'
 
 function Title (props) {
-  const { children, as, arrows, ...otherProps } = props
+  const { children, as, arrows, className, ...otherProps } = props
   const { className: titleClassName, styles: titleCSS } = titleStyle
 
   const Component = createComponentFromTag({
@@ -22,7 +22,7 @@ function Title (props) {
   }
 
   return (
-    <Component className={`${titleClassName} ${stylesMap[as].className} ${arrows ? decoratedTitleStyle.className : ''}`} {...otherProps}>
+    <Component className={`${className} ${titleClassName} ${stylesMap[as].className} ${arrows ? decoratedTitleStyle.className : ''}`} {...otherProps}>
       { children }
       { titleCSS }
       { stylesMap[as].styles }
@@ -32,8 +32,13 @@ function Title (props) {
 }
 
 Title.propTypes = {
-  children: node,
-  as: oneOf(['h1', 'h2', 'h3', 'h4']).isRequired
+  children: node.isRequired,
+  as: oneOf(['h1', 'h2', 'h3', 'h4']).isRequired,
+  className: string
+}
+
+Title.defaultProps = {
+  className: ''
 }
 
 export default Title
