@@ -1,27 +1,33 @@
 import React from 'react'
-import { string, node, func, oneOfType } from 'prop-types'
+import { string, node, func, oneOfType, bool } from 'prop-types'
 import Link from 'next/link'
-import { yellowButtonStyle } from './Button.style'
+import { yellowButtonStyle, pinkButtonStyle, buttonStyle } from './Button.style'
 
 function Button(props) {
-  const { href, children, onClick } = props
+  const { href, children, onClick, pink } = props
+  const { className: buttonClassName, styles: buttonStyles } = buttonStyle
   const { className: yellowButtonClassName, styles: yellowButtonStyles } = yellowButtonStyle
+  const { className: pinkButtonClassName, styles: pinkButtonStyles } = pinkButtonStyle
+
+  const [className, styles] = pink ? [pinkButtonClassName, pinkButtonStyles] : [yellowButtonClassName, yellowButtonStyles]
 
   if (href) {
     return (
       <Link prefetch href={href}>
-        <a className={yellowButtonClassName}>
+        <a className={`${buttonClassName} ${className}`}>
           {children}
-          {yellowButtonStyles}
+          {styles}
+          {buttonStyles}
         </a>
       </Link>
     )
   }
 
   return (
-    <button className={yellowButtonClassName} onCLick={onClick}>
+    <button className={`${buttonClassName} ${className}`} onCLick={onClick}>
       {children}
-      {yellowButtonStyles}
+      {styles}
+      {buttonStyles}
     </button>
   )
 }
@@ -29,7 +35,8 @@ function Button(props) {
 Button.propTypes = {
   href: string,
   children: oneOfType([string, node]).isRequired,
-  onClick: func
+  onClick: func,
+  pink: bool
 }
 
 Button.defaultProps = {
