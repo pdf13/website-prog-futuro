@@ -3,20 +3,20 @@ import { string, node, func, oneOfType, bool } from 'prop-types'
 import Link from 'next/link'
 import { yellowButtonStyle, pinkButtonStyle, buttonStyle } from './Button.style'
 
-function Button(props) {
-  const { href, children, onClick, pink } = props
+function Button (props) {
+  const { href, children, onClick, pink, dark, className } = props
   const { className: buttonClassName, styles: buttonStyles } = buttonStyle
   const { className: yellowButtonClassName, styles: yellowButtonStyles } = yellowButtonStyle
   const { className: pinkButtonClassName, styles: pinkButtonStyles } = pinkButtonStyle
 
-  const [className, styles] = pink ? [pinkButtonClassName, pinkButtonStyles] : [yellowButtonClassName, yellowButtonStyles]
+  const [colorClassName, colorStyles] = pink ? [pinkButtonClassName, pinkButtonStyles] : [yellowButtonClassName, yellowButtonStyles]
 
   if (href) {
     return (
       <Link prefetch href={href}>
-        <a className={`${buttonClassName} ${className}`}>
+        <a className={`${buttonClassName} ${colorClassName} ${className}`} data-color={dark ? 'dark' : 'light'}>
           {children}
-          {styles}
+          {colorStyles}
           {buttonStyles}
         </a>
       </Link>
@@ -24,9 +24,9 @@ function Button(props) {
   }
 
   return (
-    <button className={`${buttonClassName} ${className}`} onCLick={onClick}>
+    <button className={`${buttonClassName} ${colorClassName} ${className}`} onCLick={onClick} data-color={dark ? 'dark' : 'light'}>
       {children}
-      {styles}
+      {colorStyles}
       {buttonStyles}
     </button>
   )
@@ -36,12 +36,16 @@ Button.propTypes = {
   href: string,
   children: oneOfType([string, node]).isRequired,
   onClick: func,
-  pink: bool
+  pink: bool,
+  dark: bool,
+  className: string
 }
 
 Button.defaultProps = {
   href: null,
-  onClick: () => {}
+  onClick: () => {},
+  dark: false,
+  className: ''
 }
 
 export default Button
