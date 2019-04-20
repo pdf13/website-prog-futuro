@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import AboutSection from '../components/AboutSection'
 import HowWorksSection from '../components/HowWorksSection'
 import WhoWeAreSection from '../components/WhoWeAreSection'
+import HowToDonate from '../components/HowToDonate'
 
 export default () => {
   return (
@@ -11,6 +12,7 @@ export default () => {
       <AboutSection />
       <HowWorksSection />
       <WhoWeAreSection />
+      <HowToDonate />
       <br />
       <br />
       <br />
