@@ -22,8 +22,12 @@ const buttonStyle = css.resolve`
 
 const yellowButtonStyle = css.resolve`
   background: #f8f576;
-  border: 1px solid #fdc228;
+  border: none;
   
+  [data-color=dark] {
+    color: #3B333E;
+  }
+
   :hover {
     background-color: #fdc228;
     color: inherit;
