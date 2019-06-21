@@ -16,8 +16,9 @@ function HowWorksSection () {
           <Col xs={12}>
             <Title arrows as='h2'>Como funciona?</Title>
             <p className='mt-4 text-justify'>
-              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that 
-              it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+              Ao longo de dois anos, ofereceremos às turmas a capacitação profissional por meio
+              do ensino de inglês, aulas de programação e mentorias personalizadas para ajudar
+              os jovens alunos a se prepararem para o mercado de trabalho de tecnologia.
             </p>
           </Col>
         </Row>
@@ -28,9 +29,9 @@ function HowWorksSection () {
           <Col md={8} lg={9}>
             <strong>O Inglês</strong>
             <p className='mt-3 text-justify'>
-              It is a long established fact that a reader will be distracted by the 
-              readable content of a page when looking at its layout. The point of 
-              using Lorem Ipsum is that it has a more-or-less normal distribution of
+              Idioma mais que oficial em toda a comunidade de tecnologia, o inglês hoje já
+              é requisito básico para grande parte das vagas de trabalho no mercado de
+              computação. Por isso, nossos alunos receberão aulas de inglês ao longo de todo o projeto.
             </p>
           </Col>
         </Row>
@@ -41,9 +42,10 @@ function HowWorksSection () {
           <Col md={8} lg={9}>
             <strong>A Programação</strong>
             <p className='mt-3 text-justify'>
-              It is a long established fact that a reader will be distracted by the 
-              readable content of a page when looking at its layout. The point of 
-              using Lorem Ipsum is that it has a more-or-less normal distribution of
+              Muitos desenvolvedores aprenderam a programar muito antes das aulas da faculdade, e
+              com o Programadores queremos fazer o mesmo. Nossos alunos terão aulas de programação
+              ainda no ensino básico, e ao final do projeto a turma ainda vai participar de um
+              bootcamp de programação para aplicar seus aprendizados na área.
             </p>
           </Col>
         </Row>
@@ -62,10 +64,6 @@ function HowWorksSection () {
         </Row>
         <Row>
           <Col>
-            <p className='text-justify'>
-              It is a long established fact that a reader will be distracted by the readable con-
-              tent of a page when looking at its layout. The point of using Lorem Ipsum.
-            </p>
             <div className='text-center mt-4'>
               <Button pink>
                 Quero colaborar!

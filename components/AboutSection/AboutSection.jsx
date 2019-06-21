@@ -13,11 +13,10 @@ function AboutSection () {
         <Col sm={7}>
           <Title arrows as='h2'> Sobre o projeto</Title>
           <p className='mt-4 text-justify'>
-            It is a long established fact that a reader will be distracted by the readable content of a
-            page when looking at its layout. The point of using Lorem Ipsum is that it has a
-            more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
-            making it look like readable English. Many desktop publishing packages and web page
-            editors now use Lorem Ipsum as their default.
+            O maior sonho do Programadores do Futuro é ajudar a transformar a realidade do mercado de tecnologia,
+            em que apenas cerca de 10% dos profissionais são pessoas negras. O objetivo do projeto é oferecer a
+            jovens negros e negras, desde já, a oportunidade de capacitação profissional que os prepare para
+            ingressar no mercado de trabalho de computação.
           </p>
         </Col>
         <Col sm={5} className='text-center'>
@@ -58,9 +57,11 @@ function AboutSection () {
         </Col>
         <Col md={7}>
           <p className='text-justify mt-4 mt-md-0'>
-            It is a long established fact that a readerwill be distracted by the readable content of a page when looking at its layout. The point of 
-            using Lorem Ipsum is that it has a more-or-less normal distribution of It is a long established fact that a readerwill be distracted by the 
-            readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            No início de 2019, demos início à primeira turma do Programadores, com a Ingrid
+            e o Maxuell! Os dois foram escolhidos ao longo de um processo seletivo em que
+            recebemos indicações de escolas estaduais e realizamos entrevistas com os candidatos
+            para conhecê-los melhor. Em fevereiro, os dois já começaram animados a frequentar
+            suas aulas de inglês e de programação.
           </p>
         </Col>
       </Row>
