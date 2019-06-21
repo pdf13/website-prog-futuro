@@ -4,6 +4,7 @@ import AboutSection from '../components/AboutSection'
 import HowWorksSection from '../components/HowWorksSection'
 import WhoWeAreSection from '../components/WhoWeAreSection'
 import HowToDonate from '../components/HowToDonate'
+import Footer from '../components/Footer'
 
 export default () => {
   return (
@@ -13,41 +14,7 @@ export default () => {
       <HowWorksSection />
       <WhoWeAreSection />
       <HowToDonate />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Footer />
     </>
   )
 }

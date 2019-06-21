@@ -7,7 +7,7 @@ import Title from '../Title'
 
 function WhoWeAreSection () {
   return (
-    <div style={{ paddingTop: 96, paddingBottom: 96 }}>
+    <div style={{ paddingTop: 96, paddingBottom: 96 }} id='quem-somos'>
       <Container>
         <Row>
           <Col>
