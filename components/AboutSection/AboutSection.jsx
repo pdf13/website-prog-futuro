@@ -8,7 +8,7 @@ import Title from '../Title'
 function AboutSection () {
 
   return (
-    <Container style={{ paddingTop: 96, paddingBottom: 96 }}>
+    <Container style={{ paddingTop: 96, paddingBottom: 96 }} id='sobre-o-projeto'>
       <Row>
         <Col sm={7}>
           <Title arrows as='h2'> Sobre o projeto</Title>

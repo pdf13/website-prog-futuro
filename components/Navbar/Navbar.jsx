@@ -13,7 +13,7 @@ function Navbar () {
   return (
     <BsNavbar bg='transparent' expand='lg' className={className}>
       <Container>
-        <Link href='/' passHref prefetch>
+        <Link href='/'>
           <Brand>
             <img src='/static/logo.png' alt='Programadores do futuro' />
           </Brand>
@@ -21,26 +21,18 @@ function Navbar () {
         <Toggle aria-controls={`${navbarId}`} />
         <Collapse id={`${navbarId}`}>
           <BsNav className='ml-auto'>
-            <Link href='/projeto' passHref prefetch>
-              <NavLink>
-                O PROJETO
-              </NavLink>
-            </Link>
-            <Link href='/como-funciona' passHref prefetch>
-              <NavLink>
-                COMO FUNCIONA
-              </NavLink>
-            </Link>
-            <Link href='/quem-somos' passHref prefetch>
-              <NavLink>
-                QUEM SOMOS
-              </NavLink>
-            </Link>
-            <Link href='/colaborar' passHref prefetch>
-              <NavLink>
-                COLABORAR
-              </NavLink>
-            </Link>
+            <NavLink href='#sobre-o-projeto'>
+              O PROJETO
+            </NavLink>
+            <NavLink href='#como-funciona'>
+              COMO FUNCIONA
+            </NavLink>
+            <NavLink href='#quem-somos'>
+              QUEM SOMOS
+            </NavLink>
+            <NavLink href='#como-doar'>
+              COLABORAR
+            </NavLink>
           </BsNav>
         </Collapse>
         { styles }

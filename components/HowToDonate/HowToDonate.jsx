@@ -21,14 +21,14 @@ function HowToDonate () {
   const { className: boxDollarSignClassName, styles: boxDollarSignCSS } = boxDollarSignStyle
 
   return (
-    <div className={bgClassName} style={{ paddingTop: 96, paddingBottom: 96 }}>
+    <div className={bgClassName} style={{ paddingTop: 96, paddingBottom: 96 }} id='como-doar'>
       <Container>
         <Row>
           <Col>
             <Title arrows as='h2'>Como Colaborar?</Title>
             <p className='mt-4 text-justify'>
-              Para colaborar com o Programadores, basta escolher o valor da sua colaboração mensal, por meio do
-              PayPal(?), e você já estará contribuindo para as próximas turmas do projeto.
+              Para colaborar com o Programadores, basta escolher o valor da sua colaboração mensal, por meio da plataforma
+              Risü, e você já estará contribuindo para as próximas turmas do projeto.
             </p>
           </Col>
         </Row>
@@ -39,7 +39,7 @@ function HowToDonate () {
                 <span className={boxDollarSignClassName}>R$</span>
                 <span className={boxValueClassName}>10</span>
                 <p className={boxCaptionClassName}>por mês</p>
-                <Button dark>Colaborar</Button>
+                <Button dark href='https://risu.com.br/doar/um-pe-de-biblioteca'>Colaborar</Button>
               </div>
             </div>
           </Col>
@@ -49,7 +49,7 @@ function HowToDonate () {
                 <span className={boxDollarSignClassName}>R$</span>
                 <span className={boxValueClassName}>20</span>
                 <p className={boxCaptionClassName}>por mês</p>
-                <Button dark>Colaborar</Button>
+                <Button dark href='https://risu.com.br/doar/um-pe-de-biblioteca'>Colaborar</Button>
               </div>
             </div>
           </Col>
@@ -59,14 +59,14 @@ function HowToDonate () {
                 <span className={boxDollarSignClassName}>R$</span>
                 <span className={boxValueClassName}>30</span>
                 <p className={boxCaptionClassName}>por mês</p>
-                <Button dark>Colaborar</Button>
+                <Button dark href='https://risu.com.br/doar/um-pe-de-biblioteca'>Colaborar</Button>
               </div>
             </div>
           </Col>
         </Row>
         <Row>
           <Col className='text-center mt-4'>
-            <Button pink className='mt-4'>Escolher outro valor</Button>
+            <Button pink className='mt-4' href='https://risu.com.br/doar/um-pe-de-biblioteca'>Escolher outro valor</Button>
           </Col>
         </Row>
       </Container>

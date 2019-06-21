@@ -10,7 +10,7 @@ function HowWorksSection () {
   const { className: bgClassName, styles: bgCSS } = bgStyle
 
   return (
-    <div className={bgClassName} style={{ paddingTop: 96, paddingBottom: 96 }}>
+    <div className={bgClassName} style={{ paddingTop: 96, paddingBottom: 96 }} id='como-funciona'>
       <Container>
         <Row>
           <Col xs={12}>
@@ -65,7 +65,7 @@ function HowWorksSection () {
         <Row>
           <Col>
             <div className='text-center mt-4'>
-              <Button pink>
+              <Button pink href='#como-doar'>
                 Quero colaborar!
               </Button>
             </div>
