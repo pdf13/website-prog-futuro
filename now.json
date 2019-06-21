@@ -8,5 +8,14 @@
     "alias": [
         "www.programadoresdofuturo.org",
         "programadoresdofuturo.org"
+    ],
+    "routes": [
+        {
+            "src": "programadoresdofuturo.org(.*)",
+            "status": 301,
+            "headers": {
+                "Location": "https://www.programadoresdofuturo.org$1"
+            }
+        }
     ]
 }
