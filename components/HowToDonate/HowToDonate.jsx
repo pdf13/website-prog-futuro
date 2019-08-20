@@ -7,18 +7,10 @@ import Title from '../Title'
 import Button from '../Button'
 import {
   bgStyle,
-  boxDollarSignStyle,
-  boxValueStyle,
-  boxCaptionStyle,
-  boxStyle
 } from './HowToDonate.style'
 
 function HowToDonate () {
   const { className: bgClassName, styles: bgCSS } = bgStyle
-  const { className: boxClassName, styles: boxCSS } = boxStyle
-  const { className: boxValueClassName, styles: boxValueCSS } = boxValueStyle
-  const { className: boxCaptionClassName, styles: boxCaptionCSS } = boxCaptionStyle
-  const { className: boxDollarSignClassName, styles: boxDollarSignCSS } = boxDollarSignStyle
 
   return (
     <div className={bgClassName} style={{ paddingTop: 96, paddingBottom: 96 }} id='como-doar'>
@@ -33,48 +25,12 @@ function HowToDonate () {
           </Col>
         </Row>
         <Row>
-          <Col md={4}>
-            <div className='mx-1 mr-sm-1 mt-3 text-center'>
-              <div className={`${boxClassName} py-4 px-3 pb-4 pb-sm-5 card--green`}>
-                <span className={boxDollarSignClassName}>R$</span>
-                <span className={boxValueClassName}>10</span>
-                <p className={boxCaptionClassName}>por mês</p>
-                <Button dark href='https://risu.com.br/doar/um-pe-de-biblioteca'>Colaborar</Button>
-              </div>
-            </div>
-          </Col>
-          <Col md={4}>
-            <div className='mx-1 mx-sm-1 mt-3 text-center'>
-              <div className={`${boxClassName} py-4 px-3 pb-4 pb-sm-5 card--blue`}>
-                <span className={boxDollarSignClassName}>R$</span>
-                <span className={boxValueClassName}>20</span>
-                <p className={boxCaptionClassName}>por mês</p>
-                <Button dark href='https://risu.com.br/doar/um-pe-de-biblioteca'>Colaborar</Button>
-              </div>
-            </div>
-          </Col>
-          <Col md={4}>
-            <div className='mx-1 ml-sm-1 mt-3 text-center'>
-              <div className={`${boxClassName} py-4 px-3 pb-4 pb-sm-5 card--orange`}>
-                <span className={boxDollarSignClassName}>R$</span>
-                <span className={boxValueClassName}>30</span>
-                <p className={boxCaptionClassName}>por mês</p>
-                <Button dark href='https://risu.com.br/doar/um-pe-de-biblioteca'>Colaborar</Button>
-              </div>
-            </div>
-          </Col>
-        </Row>
-        <Row>
           <Col className='text-center mt-4'>
-            <Button pink className='mt-4' href='https://risu.com.br/doar/um-pe-de-biblioteca'>Escolher outro valor</Button>
+            <Button pink className='mt-4' href='/redirecionar?utm_source=how-to-donate-button'>Quero colaborar!</Button>
           </Col>
         </Row>
       </Container>
       { bgCSS }
-      { boxCSS }
-      { boxValueCSS }
-      { boxCaptionCSS }
-      { boxDollarSignCSS }
     </div>
   )
 

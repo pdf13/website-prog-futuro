@@ -43,7 +43,7 @@ function Header (props) {
                 capacitar jovens negros para o
                 mercado de tecnologia.
               </Title>
-              <Button href="#como-doar">
+              <Button href="/redirecionar?utm_source=banner-button">
                 <span className={ctaClassName}>
                   Quero colaborar!
                 </span>
