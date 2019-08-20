@@ -65,7 +65,7 @@ function HowWorksSection () {
         <Row>
           <Col>
             <div className='text-center mt-4'>
-              <Button pink href='#como-doar'>
+              <Button pink href='/redirecionar?utm_source=how-works-button'>
                 Quero colaborar!
               </Button>
             </div>

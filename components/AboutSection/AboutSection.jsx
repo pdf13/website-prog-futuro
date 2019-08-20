@@ -15,8 +15,8 @@ function AboutSection () {
           <p className='mt-4 text-justify'>
             O maior sonho do Programadores do Futuro é ajudar a transformar a realidade do mercado de tecnologia,
             em que apenas cerca de 10% dos profissionais são pessoas negras. O objetivo do projeto é oferecer a
-            jovens negros e negras, desde já, a oportunidade de capacitação profissional que os prepare para
-            ingressar no mercado de trabalho de computação.
+            jovens negros e negras em situação de vulnerabilidade socioeconômica, desde já, a oportunidade de
+            capacitação profissional que os prepare para ingressar no mercado de trabalho de computação.
           </p>
         </Col>
         <Col sm={5} className='text-center'>

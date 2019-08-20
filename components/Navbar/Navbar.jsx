@@ -30,9 +30,11 @@ function Navbar () {
             <NavLink href='#quem-somos'>
               QUEM SOMOS
             </NavLink>
-            <NavLink href='#como-doar'>
-              COLABORAR
-            </NavLink>
+            <Link href='/redirecionar?utm_source=navbar' passHref>
+              <NavLink>
+                COLABORAR
+              </NavLink>
+            </Link>
           </BsNav>
         </Collapse>
         { styles }
