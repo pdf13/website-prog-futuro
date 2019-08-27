@@ -18,7 +18,7 @@ function WhoWeAreSection () {
           <Col lg={4} sm={6} className='mt-4'>
             <Row bsPrefix='row align-items-center'>
               <Col xs={4}>
-                <img src='http://i.pravatar.cc/80' className='img-fluid rounded-circle mx-auto d-block' />
+                <img src='/static/Cris.jpeg' className='img-fluid rounded-circle mx-auto d-block' />
               </Col>
               <Col xs={8}>
                 <p className='h5 mb-0'>Cristiano Landa</p>
@@ -29,7 +29,7 @@ function WhoWeAreSection () {
           <Col lg={4} sm={6} className='mt-4'>
             <Row bsPrefix='row align-items-center'>
               <Col xs={4}>
-                <img src='http://i.pravatar.cc/80' className='img-fluid rounded-circle mx-auto d-block' />
+                <img src='/static/Fernanda.jpeg' className='img-fluid rounded-circle mx-auto d-block' />
               </Col>
               <Col xs={8}>
                 <p className='h5 mb-0'>Fernanda Passos</p>
@@ -40,7 +40,7 @@ function WhoWeAreSection () {
           <Col lg={4} sm={6} className='mt-4'>
             <Row bsPrefix='row align-items-center'>
               <Col xs={4}>
-                <img src='http://i.pravatar.cc/80' className='img-fluid rounded-circle mx-auto d-block' />
+                <img src='/static/Marques.jpeg' className='img-fluid rounded-circle mx-auto d-block' />
               </Col>
               <Col xs={8}>
                 <p className='h5 mb-0'>Lucas Marques</p>
@@ -51,7 +51,7 @@ function WhoWeAreSection () {
           <Col lg={4} sm={6} className='mt-4'>
             <Row bsPrefix='row align-items-center'>
               <Col xs={4}>
-                <img src='http://i.pravatar.cc/80' className='img-fluid rounded-circle mx-auto d-block' />
+                <img src='/static/Lucia.jpeg' className='img-fluid rounded-circle mx-auto d-block' />
               </Col>
               <Col xs={8}>
                 <p className='h5 mb-0'>Lúcia Aparecida Marques</p>
@@ -62,7 +62,7 @@ function WhoWeAreSection () {
           <Col lg={4} sm={6} className='mt-4'>
             <Row bsPrefix='row align-items-center'>
               <Col xs={4}>
-                <img src='http://i.pravatar.cc/80' className='img-fluid rounded-circle mx-auto d-block' />
+                <img src='/static/Luisa.jpeg' className='img-fluid rounded-circle mx-auto d-block' />
               </Col>
               <Col xs={8}>
                 <p className='h5 mb-0'>Luísa Souza</p>
@@ -73,7 +73,7 @@ function WhoWeAreSection () {
           <Col lg={4} sm={6} className='mt-4'>
             <Row bsPrefix='row align-items-center'>
               <Col xs={4}>
-                <img src='http://i.pravatar.cc/80' className='img-fluid rounded-circle mx-auto d-block' />
+                <img src='/static/Marcelo.jpeg' className='img-fluid rounded-circle mx-auto d-block' />
               </Col>
               <Col xs={8}>
                 <p className='h5 mb-0'>Marcelo Brenner</p>
@@ -84,7 +84,7 @@ function WhoWeAreSection () {
           <Col lg={4} sm={6} className='mt-4'>
             <Row bsPrefix='row align-items-center'>
               <Col xs={4}>
-                <img src='http://i.pravatar.cc/80' className='img-fluid rounded-circle mx-auto d-block' />
+                <img src='/static/Pedro.jpeg' className='img-fluid rounded-circle mx-auto d-block' />
               </Col>
               <Col xs={8}>
                 <p className='h5 mb-0'>Pedro Dias</p>
@@ -95,7 +95,7 @@ function WhoWeAreSection () {
           <Col lg={4} sm={6} className='mt-4'>
             <Row bsPrefix='row align-items-center'>
               <Col xs={4}>
-                <img src='http://i.pravatar.cc/80' className='img-fluid rounded-circle mx-auto d-block' />
+                <img src='/static/Rosilaine.jpeg' className='img-fluid rounded-circle mx-auto d-block' />
               </Col>
               <Col xs={8}>
                 <p className='h5 mb-0'>Rosilaine de Oliveira</p>

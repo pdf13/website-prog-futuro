@@ -33,7 +33,7 @@ function RedirectBox() {
             </div>
             <div className='text-center mt-4'>
                 <p className='text-white mb-0'>Não foi redirecionado automaticamente?</p>
-                <a style={{color: '#F5DE67'}} href='https://risu.com.br/doar/um-pe-de-biblioteca'>Clique e conclua a sua colaboração</a>
+                <a style={{color: '#F5DE67'}} href='http://risu.com.br/doar/programadores-do-futuro'>Clique e conclua a sua colaboração</a>
             </div>
             {cardCSS}
             {progressCSS}
