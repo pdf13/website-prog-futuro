@@ -1,23 +1,23 @@
-import css from 'styled-jsx/css';
+import css from 'styled-jsx/css'
 
 const rootStyle = css.resolve`
     width: 100%;
     max-width: 448px;
-`;
+`
 
 const cardStyle = css.resolve`
     background-color: #fff;
     border-radius: 4px;
     width: 100%;
     overflow: hidden;
-`;
+`
 
 const progressStyle = css.resolve`
     height: 20px;  /* Can be anything */
     position: relative;
     background: #555;
     box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
-`;
+`
 
 const progressInnerStyle = css.resolve`
     display: block;
@@ -59,6 +59,6 @@ const progressInnerStyle = css.resolve`
             background-position: 50px 50px;
         }
     }
-`;
+`
 
-export { rootStyle, cardStyle, progressStyle, progressInnerStyle };
+export { rootStyle, cardStyle, progressStyle, progressInnerStyle }

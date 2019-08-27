@@ -5,5 +5,5 @@ const bgStyle = css.resolve`
 `
 
 export {
-  bgStyle,
+  bgStyle
 }

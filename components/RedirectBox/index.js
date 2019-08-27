@@ -1,1 +1,1 @@
-export { default } from './RedirectBox';
+export { default } from './RedirectBox'

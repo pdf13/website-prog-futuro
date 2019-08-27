@@ -6,7 +6,7 @@ import RedirectBox from '../components/RedirectBox';
 function Redirecionar() {
     useEffect(() => {
         setTimeout(() => {
-            Router.push('https://risu.com.br/doar/um-pe-de-biblioteca');
+            Router.push('http://risu.com.br/doar/programadores-do-futuro');
         }, 3000)
     }, [])
 
