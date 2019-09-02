@@ -14,13 +14,13 @@ function RedirectBox() {
                 <div className={progressClassName}>
                     <span className={progressInnerClassName} />
                 </div>
-                <div className="container-fluid text-center" style={{padding: '16px 32px 64px'}}>
+                <div className="container-fluid text-center" style={{padding: '32px 32px 64px'}}>
                     <div className="row align-items-center logos">
                         <div className="col-sm">
                             <img src='/static/logo-laranja.png' alt='Logomarca Programadores do Futuro' />
                         </div>
                         <div className="col-sm">
-                            <img src='/static/logo-pe-de-biblioteca.png' alt='Logomarca Programadores do Futuro' />
+                            <img src='/static/logo-risu.png' alt='Logomarca Programadores do Futuro' />
                         </div>
                     </div>
                     <div className='row justify-content-center mt-5 info'>
