@@ -56,9 +56,12 @@ function HowWorksSection () {
           <Col md={8} lg={9}>
             <strong>O Mercado de Trabalho</strong>
             <p className='mt-3 text-justify'>
-              It is a long established fact that a reader will be distracted by the 
-              readable content of a page when looking at its layout. The point of 
-              using Lorem Ipsum is that it has a more-or-less normal distribution of
+              Segundo o Bureau of Labor Statistics do EUA, profissões ligadas à tecnologia estão entre as
+              que mais crescem. Aprender a programar, além de desenvolver habilidades importante no presente,
+              como lógica e resolução de problemas, abre portas para o futuro. Num mercado carente de bons
+              profissionais de TI, a tendência é que essa busca se intensifique cada vez mais. Uma outra porta
+              que se abre é a do empreendedorismo, que é extremante facilitado a partir do momento que o
+              jovem aprende a programar.
             </p>
           </Col>
         </Row>
