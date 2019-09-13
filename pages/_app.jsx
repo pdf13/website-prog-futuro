@@ -1,12 +1,23 @@
 import React from 'react'
-import App, { Container } from 'next/app'
+import App from 'next/app'
 import Head from 'next/head'
+import Router from 'next/router'
+import ReactGA from 'react-ga'
 
 class MyApp extends App {
+  componentDidMount () {
+    ReactGA.initialize('UA-147908050-1')
+    ReactGA.pageview(window.location.pathname + window.location.search)
+
+    Router.events.on('routeChangeComplete', () => {
+      ReactGA.pageview(window.location.pathname + window.location.search)
+    })
+  }
+
   render () {
     const { Component, pageProps } = this.props
     return (
-      <Container>
+      <>
         <Head>
           <link
             rel='stylesheet'
@@ -22,7 +33,7 @@ class MyApp extends App {
           }
         `}</style>
         <Component {...pageProps} />
-      </Container>
+      </>
     )
   }
 }

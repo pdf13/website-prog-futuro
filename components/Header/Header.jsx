@@ -39,8 +39,8 @@ function Header (props) {
           <Row>
             <Col sm={{span: 4, offset: 3}}>
               <Title color='light' as='h3'>
-                Colabore com o projeto que vai
-                capacitar jovens negros para o
+                Colabore com o projeto que vai multiplicar
+                as oportunidades para jovens negros no
                 mercado de tecnologia.
               </Title>
               <Button href="/redirecionar?utm_source=banner-button">

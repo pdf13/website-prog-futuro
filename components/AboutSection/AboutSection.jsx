@@ -13,10 +13,12 @@ function AboutSection () {
         <Col sm={7}>
           <Title arrows as='h2'> Sobre o projeto</Title>
           <p className='mt-4 text-justify'>
-            O maior sonho do Programadores do Futuro é ajudar a transformar a realidade do mercado de tecnologia,
-            em que apenas cerca de 10% dos profissionais são pessoas negras. O objetivo do projeto é oferecer a
-            jovens negros e negras em situação de vulnerabilidade socioeconômica, desde já, a oportunidade de
-            capacitação profissional que os prepare para ingressar no mercado de trabalho de computação.
+            O maior sonho do Programadores do Futuro é ajudar a transformar a realidade
+            do mercado de tecnologia, em que apenas cerca de 10% dos profissionais são
+            pessoas negras. O objetivo do projeto é, desde já, oferecer a jovens negros
+            e negras em situação de vulnerabilidade socioeconômica a oportunidade de
+            inserção no mercado por meio de atividades de formação profissional na área
+            de programação.
           </p>
         </Col>
         <Col sm={5} className='text-center'>
