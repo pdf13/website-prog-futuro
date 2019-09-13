@@ -13,7 +13,7 @@ function Button (props) {
 
   if (href) {
     return (
-      <Link prefetch href={href}>
+      <Link href={href}>
         <a className={`${buttonClassName} ${colorClassName} ${className}`} data-color={dark ? 'dark' : 'light'}>
           {children}
           {colorStyles}

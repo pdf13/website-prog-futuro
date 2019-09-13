@@ -25,7 +25,7 @@ function RedirectBox() {
                     </div>
                     <div className='row justify-content-center mt-5 info'>
                         <div className="col-sm-10">
-                            Estamos te redirecionando para a página da Um Pé de Biblioteca,
+                            Estamos te redirecionando para a página da Risu,
                             onde você poderá concluir sua colaboração com o Programadores do Futuro. 
                         </div>
                     </div>

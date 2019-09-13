@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react';
-import Router from 'next/router';
+import React, { useEffect } from 'react'
 
-import RedirectBox from '../components/RedirectBox';
+import RedirectBox from '../components/RedirectBox'
 
 function Redirecionar() {
     useEffect(() => {
         setTimeout(() => {
-            Router.push('http://risu.com.br/doar/programadores-do-futuro');
+            window.location.href = 'http://risu.com.br/doar/programadores-do-futuro'
         }, 3000)
     }, [])
 
@@ -22,7 +21,7 @@ function Redirecionar() {
         }}>
             <RedirectBox></RedirectBox>
         </div>
-    );
+    )
 }
 
-export default Redirecionar;
+export default Redirecionar
