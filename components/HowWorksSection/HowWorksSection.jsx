@@ -43,7 +43,7 @@ function HowWorksSection () {
             <strong>A Programação</strong>
             <p className='mt-3 text-justify'>
               Muitos desenvolvedores aprenderam a programar muito antes das aulas da faculdade, e
-              com o Programadores queremos fazer o mesmo. Nossos alunos terão aulas de programação
+              com o Programadores do Futuro queremos fazer o mesmo. Nossos alunos terão aulas de programação
               ainda no ensino básico, e ao final do projeto a turma ainda vai participar de um
               bootcamp de programação para aplicar seus aprendizados na área.
             </p>
