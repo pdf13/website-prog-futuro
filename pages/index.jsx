@@ -12,7 +12,6 @@ export default () => {
       <Header />
       <AboutSection />
       <HowWorksSection />
-      <WhoWeAreSection />
       <HowToDonate />
       <Footer />
     </>

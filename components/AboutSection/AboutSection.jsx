@@ -46,12 +46,6 @@ function AboutSection () {
             <Item className='text-center'>
               <img
                 className='img-fluid'
-                src='/static/sobre-o-programa-3.png'
-                alt='Ingrid e Maxuel conhecem os primeiros professores de programação' />
-            </Item>
-            <Item className='text-center'>
-              <img
-                className='img-fluid'
                 src='/static/sobre-o-programa-4.png'
                 alt='Ingrid e Maxuel aprendendo as primeiras lições de programação' />
             </Item>
