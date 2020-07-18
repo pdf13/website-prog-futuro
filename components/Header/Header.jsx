@@ -29,7 +29,7 @@ function Header (props) {
             </Col>
             <Col sm={4}>
               <Title color='light' as='h1'>
-                Programadores<br />do futuro
+                Programadores<br />do amanhã
               </Title>
             </Col>
             <Col xs={4} sm={5} className='text-center pt-2 d-none d-sm-block'>
@@ -40,7 +40,7 @@ function Header (props) {
             <Col sm={{span: 4, offset: 3}}>
               <Title color='light' as='h3'>
                 Colabore com o projeto que vai multiplicar
-                as oportunidades para jovens negros no
+                as oportunidades para jovens no
                 mercado de tecnologia.
               </Title>
               <Button href="/redirecionar?utm_source=banner-button">

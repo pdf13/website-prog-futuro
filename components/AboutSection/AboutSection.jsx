@@ -13,12 +13,11 @@ function AboutSection () {
         <Col sm={7}>
           <Title arrows as='h2'> Sobre o projeto</Title>
           <p className='mt-4 text-justify'>
-            O maior sonho do Programadores do Futuro é ajudar a transformar a realidade
-            do mercado de tecnologia, em que apenas cerca de 10% dos profissionais são
-            pessoas negras. O objetivo do projeto é, desde já, oferecer a jovens negros
-            e negras em situação de vulnerabilidade socioeconômica a oportunidade de
-            inserção no mercado por meio de atividades de formação profissional na área
-            de programação.
+            O nosso sonho é oferecer a jovens negros e negras em situação de vulnerabilidade
+            a oportunidade de inserção no mercado por meio de atividades de formação profissional
+            na área de programação. E metade das vagas é destinada a garotas! Dessa forma
+            ampliamos a empregabiliadde dos alunos selecionados, transformando suas vidas,
+            o mercado e a sociedade.
           </p>
         </Col>
         <Col sm={5} className='text-center'>
@@ -27,7 +26,7 @@ function AboutSection () {
       </Row>
       <Row className='mt-5'>
         <Col xs={12}>
-          <Title as='h3' className='mb-5'> Nossa primeira turma já começou</Title>
+          <Title as='h3' className='mb-5'> Já estamos na segunda turma! </Title>
         </Col>
         <Col md={5}>
           <Carousel controls={false}>
@@ -53,12 +52,19 @@ function AboutSection () {
         </Col>
         <Col md={7}>
           <p className='text-justify mt-4 mt-md-0'>
-            No início de 2019, demos início à primeira turma do Programadores, com a Ingrid
-            e o Maxuell! Os dois foram escolhidos ao longo de um processo seletivo em que
-            recebemos indicações de escolas estaduais e realizamos entrevistas com os candidatos
-            para conhecê-los melhor. Em fevereiro, os dois já começaram animados a frequentar
-            suas aulas de inglês e de programação.
+            Em 2020, o Programadores do Amanhã está atendendo 7 alunos, escolhidos ao longo
+            de processos seletivos criteriosos, feito com alunos de escolas públicas e a
+            realização de etapas presenciais com os candidatos.
           </p>
+
+          <blockquote>
+            "Eu nunca imaginei que fosse fazer programação. Hoje em dia, já tenho
+            em mente que quero me profissionalizar nessa área, <strong>porque
+            acredito que vai me proporcionar um conhecimento que vai garantir
+            o meu futuro</strong>"
+            <br/>
+            <small>-- INGRID PAULINO, ALUNA DA PRIMEIRA TURMA DO PROGRAMADORES DO AMANHÃ</small>
+          </blockquote>
         </Col>
       </Row>
     </Container>

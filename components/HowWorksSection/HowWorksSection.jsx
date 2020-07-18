@@ -16,22 +16,8 @@ function HowWorksSection () {
           <Col xs={12}>
             <Title arrows as='h2'>Como funciona?</Title>
             <p className='mt-4 text-justify'>
-              Ao longo de dois anos, ofereceremos às turmas a capacitação profissional por meio
-              do ensino de inglês, aulas de programação e mentorias personalizadas para ajudar
-              os jovens alunos a se prepararem para o mercado de trabalho de tecnologia.
-            </p>
-          </Col>
-        </Row>
-        <Row className='align-items-center'>
-          <Col md={4} lg={3} className='text-center'>
-            <img src='/static/icone-livro.png' alt='livro simbolizando as aulas de inglês' />
-          </Col>
-          <Col md={8} lg={9}>
-            <strong>O Inglês</strong>
-            <p className='mt-3 text-justify'>
-              Idioma mais que oficial em toda a comunidade de tecnologia, o inglês hoje já
-              é requisito básico para grande parte das vagas de trabalho no mercado de
-              computação. Por isso, nossos alunos receberão aulas de inglês ao longo de todo o projeto.
+              Os alunos recebem capacitação profissional por meio do ensino de programação, inglês
+              e acompanhamento para ajudá-los a se prepararem para o mercado de tecnologia.
             </p>
           </Col>
         </Row>
@@ -40,12 +26,25 @@ function HowWorksSection () {
             <img src='/static/icone-pc.png' alt='computador simbolizando as aulas de programação' />
           </Col>
           <Col md={8} lg={9}>
-            <strong>A Programação</strong>
+            <strong>Programação</strong>
             <p className='mt-3 text-justify'>
               Muitos desenvolvedores aprenderam a programar muito antes das aulas da faculdade, e
-              com o Programadores do Futuro queremos fazer o mesmo. Nossos alunos terão aulas de programação
-              ainda no ensino básico, e ao final do projeto a turma ainda vai participar de um
-              bootcamp de programação para aplicar seus aprendizados na área.
+              no "Programadores do Amanhã" nós fazemos o mesmo. Os alunos tem aulas de programação
+              já no ensino básico, e ao final do curso, poderão se inserir no mercado de trabalho
+              como programadores.
+            </p>
+          </Col>
+        </Row>
+        <Row className='align-items-center'>
+          <Col md={4} lg={3} className='text-center'>
+            <img src='/static/icone-livro.png' alt='livro simbolizando as aulas de inglês' />
+          </Col>
+          <Col md={8} lg={9}>
+            <strong>Porque aprender Inglês?</strong>
+            <p className='mt-3 text-justify'>
+              Inglês é o idioma mais que oficial de toda a comunidade de tecnologia, sendo um
+              requisito básico para grande parte das vagas de trabalho no mercado de computação.
+              Por isso, nossos alunos recebem aulas de inglês ao longo de todo o projeto.
             </p>
           </Col>
         </Row>
@@ -56,22 +55,29 @@ function HowWorksSection () {
           <Col md={8} lg={9}>
             <strong>O Mercado de Trabalho</strong>
             <p className='mt-3 text-justify'>
-              Segundo o Bureau of Labor Statistics do EUA, profissões ligadas à tecnologia estão entre as
-              que mais crescem. Aprender a programar, além de desenvolver habilidades importante no presente,
-              como lógica e resolução de problemas, abre portas para o futuro. Num mercado carente de bons
-              profissionais de TI, a tendência é que essa busca se intensifique cada vez mais. Uma outra porta
-              que se abre é a do empreendedorismo, que é extremante facilitado a partir do momento que o
-              jovem aprende a programar.
+              Aprender a programar, além de desenvolver habilidades importantes, como lógica e 
+              resolução de problemas, abre as portas para o futuuro, afinal profissões ligadas a
+              tecnologia estão entre as que mais ganham espaço no mercado. No Programadores do
+              Amanhã os alunos participam de atividades preparatórias para o mercado de trabalho,
+              visitam empresas do setor de tecnologia e recebem mentorias.
             </p>
           </Col>
         </Row>
-        <Row>
+        <Row className="mt-5">
           <Col>
-            <div className='text-center mt-4'>
-              <Button pink href='/redirecionar?utm_source=how-works-button'>
-                Quero colaborar!
-              </Button>
-            </div>
+            <Title as="h3">E durante a quarentena?</Title>
+            <p>
+              Distantes sim, mas sempre conectados! Os desafios trazidos pela
+              quarentena foram muitos, mas não paramos. Como não podemos nos
+              reunir presencialmente, as atividades agora são virtuais. No momento,
+              as visitas às empresas de tecnologia estão suspensas, mas todo mês
+              acontece um bate-papo com profissionais da área de tecnologia.
+            </p>
+            <Button pink href='/redirecionar?utm_source=how-works-button' className='mt-4'>
+              Quero colaborar!
+            </Button>
+          </Col>
+          <Col>
           </Col>
         </Row>
       </Container>
