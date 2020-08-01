@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "bootstrap": "4.3.1",
-    "next": "9.4.4",
+    "next": "9.5.1",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-bootstrap": "1.0.0-beta.5",
@@ -45,6 +45,12 @@
     "eslint-plugin-promise": "4.0.1",
     "eslint-plugin-react": "7.11.1",
     "eslint-plugin-standard": "4.0.0",
-    "husky": "1.1.4"
+    "husky": "1.1.4",
+    "tailwindcss": "1.6.0",
+    "postcss-flexbugs-fixes": "4.2.1",
+    "postcss-preset-env": "6.7.0"
+  },
+  "resolutions": {
+    "webpack": "^5.0.0-beta.22"
   }
 }
