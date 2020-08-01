@@ -1,72 +1,44 @@
 import React from 'react'
-import { node } from 'prop-types'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container'
-
-import { bgStyle, ctaStyle, navBarStyle, heroStyle } from './Header.style'
 import Navbar from '../Navbar'
 import Title from '../Title'
-import Button from '../Button';
+import Button from '../Button'
+import css from 'styled-jsx/css'
+
+const bgStyle = css.resolve`
+  @media (max-width: 992px) {
+    background-position-x: 70%;
+  }
+`
 
 function Header (props) {
   const { className: bgClassName, styles: bgStyles } = bgStyle
-  const { className: navbarClassName, styles: navbarStyles } = navBarStyle
-  const { className: heroClassName, styles: heroStyles } = heroStyle
-  const { className: ctaClassName, styles: ctaStyles } = ctaStyle
-  const { children } = props
+  const backgroundImage = { backgroundImage: 'url("/static/bg.png")' }
 
   return (
-    <div className={bgClassName}>
-      <div className={navbarClassName}>
-        <Navbar />
+    <div className={`bg-cover bg-right h-screen flex flex-col ${bgClassName}`} style={backgroundImage}>
+      <Navbar />
+      <div className='container mx-auto px-4 flex flex-col text-left justify-center flex-grow'>
+        <Title as='h1' className='max-w-sm sm:max-w-lg'>
+          Programadores do amanhã
+        </Title>
+        <p className='text-lg sm:text-xl text-white leading-snug mt-2 mb-6'>
+          Colabore com o projeto que vai multiplicar as oportunidades para
+          jovens no mercado de tecnologia. Colabore com o projeto que vai
+          multiplicar as oportunidades para jovens no mercado de
+          tecnologia.
+        </p>
+        <div>
+          <Button href='/redirecionar?utm_source=banner-button' className='p-5 bg-pa-yellow font-bold text-lg'>
+            Quero colaborar!
+          </Button>
+        </div>
       </div>
-      <div className={heroClassName}>
-        <Container>
-          <Row className='align-items-center'>
-            <Col sm={3} className='text-center pt-2 d-none d-sm-block'>
-              <img src='/static/ch-header-left.svg' alt='setas coloridas apontando para a direita'/>
-            </Col>
-            <Col sm={4}>
-              <Title color='light' as='h1'>
-                Programadores<br />do amanhã
-              </Title>
-            </Col>
-            <Col xs={4} sm={5} className='text-center pt-2 d-none d-sm-block'>
-              <img src='/static/ch-header-right.svg' alt='setas coloridas apontando para a direita'/>
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={{span: 4, offset: 3}}>
-              <Title color='light' as='h3'>
-                Colabore com o projeto que vai multiplicar
-                as oportunidades para jovens no
-                mercado de tecnologia.
-              </Title>
-              <Button href="/redirecionar?utm_source=banner-button">
-                <span className={ctaClassName}>
-                  Quero colaborar!
-                </span>
-              </Button>
-            </Col>
-          </Row>
-        </Container>
+      <div className='p-8'>
+        <img src='/static/logo-pe-de-bibllioteca-header.png' alt='Logo da ONG Pé de Biblioteca' />
       </div>
       {bgStyles}
-      {navbarStyles}
-      {heroStyles}
-      {ctaStyles}
-      {children}
     </div>
   )
-}
-
-Header.propTypes = {
-  children: node
-}
-
-Header.defaultProps = {
-  children: null
 }
 
 export default Header

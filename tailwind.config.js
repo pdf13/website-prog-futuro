@@ -3,7 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'accent-1': '#333'
+        'pa-yellow': '#FFF075',
+        'pa-pink': '#FF3873',
+        'pa-orange': '#F37E3A'
       }
     }
   },
