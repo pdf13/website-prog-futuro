@@ -7,7 +7,7 @@ function Button (props) {
 
   const commonClasses = 'p-5 font-bold text-lg'
   const styles = {
-    yelllow: 'bg-pa-yellow',
+    yellow: 'bg-pa-yellow',
     pink: 'bg-pa-pink text-white'
   }
 
@@ -16,7 +16,7 @@ function Button (props) {
   if (href) {
     return (
       <Link href={href}>
-        <a className={`${colorClasses} ${className}`}>
+        <a className={`inline-block ${colorClasses} ${className}`}>
           {children}
         </a>
       </Link>

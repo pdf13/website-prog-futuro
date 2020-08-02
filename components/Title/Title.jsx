@@ -1,26 +1,25 @@
 import React from 'react'
-import createComponentFromTag from 'react-create-component-from-tag-prop'
-import { node, string, oneOf } from 'prop-types'
+import { node, string, oneOf, bool } from 'prop-types'
 
 import { decoratedTitleStyle } from './Title.style'
 
-const h1Classes = 'text-5xl sm:text-6xl text-white font-black break-all leading-tight'
+const h1Classes = 'text-5xl sm:text-6xl font-black break-all leading-tight'
 const H1 = ({ children, className, arrows }) => (
-  <h1 className={`${className} ${h1Classes} ${arrows ? decoratedTitleStyle : ''}`}>{children}</h1>
+  <h1 className={`${className} ${h1Classes}`}>{children}</h1>
 )
 
-const h2Classes = ''
+const h2Classes = 'text-2xl sm:text-3xl font-bold'
 const H2 = ({ children, className, as, arrows }) => (
-  <h2 className={`${className} ${h2Classes} ${arrows ? decoratedTitleStyle : ''}`}>{children}</h2>
+  <h2 className={`${className} ${h2Classes}`}>{children}</h2>
 )
 
-const h3Classes = ''
+const h3Classes = 'text-xl font-semibold'
 const H3 = ({ children, className, as, arrows }) => (
-  <h3 className={`${className} ${h3Classes} ${arrows ? decoratedTitleStyle : ''}`}>{children}</h3>
+  <h3 className={`${className} ${h3Classes}`}>{children}</h3>
 )
 
 function Title (props) {
-  const { children, arrows, as, className } = props
+  const { children, arrows, as, className, light } = props
 
   let Component = H1
 
@@ -42,7 +41,17 @@ function Title (props) {
   }
 
   return (
-    <Component className={className} arrows={arrows}>
+    <Component
+      className={
+        `
+         flex items-center
+         ${className}
+         ${light ? 'text-white' : 'text-black'}
+         ${arrows ? decoratedTitleStyle.className : ''}
+        `
+      }
+      arrows={arrows}
+    >
       {children}
       {decoratedTitleStyle.styles}
     </Component>
@@ -52,11 +61,13 @@ function Title (props) {
 Title.propTypes = {
   children: node.isRequired,
   as: oneOf(['h1', 'h2', 'h3']).isRequired,
-  className: string
+  className: string,
+  light: bool
 }
 
 Title.defaultProps = {
-  className: ''
+  className: '',
+  light: false
 }
 
 export default Title

@@ -1,72 +1,63 @@
 import React from 'react'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container'
-import Carousel, { Item } from 'react-bootstrap/Carousel'
 import Title from '../Title'
+import Button from '../Button'
+import Container from '../Contatiner'
+import Carousel from '../Carousel'
+import YouTube from 'react-youtube'
 
 function AboutSection () {
-
   return (
-    <Container style={{ paddingTop: 96, paddingBottom: 96 }} id='sobre-o-projeto'>
-      <Row>
-        <Col sm={7}>
+    <Container className='my-8 md:my-16'>
+      <div className='flex flex-wrap justify-start md:flex-row-reverse'>
+        <div className='w-full md:w-1/2'>
+          <div className=''>
+            <Carousel />
+          </div>
+        </div>
+        <div className='w-full md:w-1/2 pt-6 md:pt-0'>
           <Title arrows as='h2'> Sobre o projeto</Title>
-          <p className='mt-4 text-justify'>
+          <p className='mt-6 md:mt-10 mb-6 md:mb-4'>
             O nosso sonho é oferecer a jovens negros e negras em situação de vulnerabilidade
             a oportunidade de inserção no mercado por meio de atividades de formação profissional
             na área de programação. E metade das vagas é destinada a garotas! Dessa forma
-            ampliamos a empregabiliadde dos alunos selecionados, transformando suas vidas,
+            ampliamos a empregabilidade dos alunos selecionados, transformando suas vidas,
             o mercado e a sociedade.
           </p>
-        </Col>
-        <Col sm={5} className='text-center'>
-          <img src='/static/garota-programadora.png' alt='Garota programadora' />
-        </Col>
-      </Row>
-      <Row className='mt-5'>
-        <Col xs={12}>
-          <Title as='h3' className='mb-5'> Já estamos na segunda turma! </Title>
-        </Col>
-        <Col md={5}>
-          <Carousel controls={false}>
-            <Item className='text-center'>
-              <img
-                className='img-fluid'
-                src='/static/sobre-o-programa-1.png'
-                alt='Selecionados para a primera turma Ingrid e Maxuel exibem seus nootebooks que ganharam de presente' />
-            </Item>
-            <Item className='text-center'>
-              <img
-                className='img-fluid'
-                src='/static/sobre-o-programa-2.png'
-                alt='Primeira aula de programação na escola Codebuddy' />
-            </Item>
-            <Item className='text-center'>
-              <img
-                className='img-fluid'
-                src='/static/sobre-o-programa-4.png'
-                alt='Ingrid e Maxuel aprendendo as primeiras lições de programação' />
-            </Item>
-          </Carousel>
-        </Col>
-        <Col md={7}>
-          <p className='text-justify mt-4 mt-md-0'>
+          <Button color='pink' href='/redirecionar?utm_source=about-button'>
+            Quero colaborar!
+          </Button>
+        </div>
+      </div>
+      <div className='flex flex-wrap justify-start'>
+        <div className='w-full my-6 md:mb-12'>
+          <Title as='h3'>
+            Já estamos na segunda turma
+          </Title>
+        </div>
+        <div className='w-full md:w-1/2 md:pr-8'>
+          <div className='youtube-wrapper'>
+            <YouTube videoId='KWJbf_a0TMk' />
+          </div>
+        </div>
+        <div className='w-full md:w-1/2'>
+          <p className='text-justify mt-4 md:mt-0'>
             Em 2020, o Programadores do Amanhã está atendendo 7 alunos, escolhidos ao longo
             de processos seletivos criteriosos, feito com alunos de escolas públicas e a
             realização de etapas presenciais com os candidatos.
           </p>
 
-          <blockquote>
+          <blockquote className='rounded-lg bg-gray-200 p-6 mt-4'>
             "Eu nunca imaginei que fosse fazer programação. Hoje em dia, já tenho
-            em mente que quero me profissionalizar nessa área, <strong>porque
-            acredito que vai me proporcionar um conhecimento que vai garantir
-            o meu futuro</strong>"
-            <br/>
+            em mente que quero me profissionalizar nessa área,&nbsp;
+            <strong>
+              porque acredito que vai me proporcionar um conhecimento que vai garantir
+              o meu futuro
+            </strong>"
+            <br />
             <small>-- INGRID PAULINO, ALUNA DA PRIMEIRA TURMA DO PROGRAMADORES DO AMANHÃ</small>
           </blockquote>
-        </Col>
-      </Row>
+        </div>
+      </div>
     </Container>
   )
 }

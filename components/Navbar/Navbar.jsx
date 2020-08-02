@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
+import Container from '../Contatiner'
 
 function Navbar () {
   const [open, setOpen] = useState(false)
@@ -7,7 +8,8 @@ function Navbar () {
   const toggleMenu = () => setOpen(!open)
 
   return (
-    <div className='container mx-auto pt-4 px-4 xl:px-0'>
+    <Container>
+
       <nav className='flex items-center justify-between flex-wrap py-6'>
         <div className='flex items-center flex-shrink-0 text-white mr-6'>
           <img src='/static/logo.png' alt='Programadores do amanhã' />
@@ -15,7 +17,7 @@ function Navbar () {
         <div className='block lg:hidden'>
           <button
             onClick={toggleMenu}
-            className='flex items-center px-3 py-2 border-2 rounded text-white border-white hover:text-white hover:border-white'
+            className='flex items-center px-3 py-2 border-2 rounded text-white border-white hover:border-white'
           >
             <svg
               className='fill-current h-4 w-4'
@@ -32,32 +34,29 @@ function Navbar () {
         >
           <div className='text-sm lg:flex-grow'>
             <Link href='#sobre-o-projeto'>
-              <a className='block mt-4 lg:inline-block lg:mt-0 text-base text-white hover:text-white mr-4'>
+              <a className='block hover:text-pa-pink hover:font-bold mt-4 lg:inline-block lg:mt-0 text-base text-white mr-4'>
                 O PROJETO
               </a>
             </Link>
             <Link href='#como-funciona'>
-              <a className='block mt-4 lg:inline-block lg:mt-0 text-base text-white hover:text-white mr-4'>
+              <a className='block hover:text-pa-pink hover:font-bold mt-4 lg:inline-block lg:mt-0 text-base text-white mr-4'>
                 COMO FUNCIONA
               </a>
             </Link>
             <Link href='#quem-somos'>
-              <a
-                href='#responsive-header'
-                className='block mt-4 lg:inline-block lg:mt-0 text-base text-white hover:text-white'
-              >
+              <a className='block hover:text-pa-pink hover:font-bold mt-4 lg:inline-block lg:mt-0 text-base text-white mr-4'>
                 QUEM SOMOS
               </a>
             </Link>
             <Link href='/redirecionar?utm_source=navbar'>
-              <a className='block mt-4 lg:inline-block lg:mt-0 text-base text-white hover:text-white'>
+              <a className='block hover:text-pa-pink hover:font-bold mt-4 lg:inline-block lg:mt-0 text-base text-white'>
                 COLABORAR
               </a>
             </Link>
           </div>
         </div>
       </nav>
-    </div>
+    </Container>
   )
 }
 
