@@ -4,7 +4,7 @@ import { node, string } from 'prop-types'
 const Container = (props) => {
   const { children, className } = props
   return (
-    <div className={`container mx-auto px-4 xl:px-0 ${className}`}>
+    <div className={`container mx-auto px-4 xl:px-0 ${className}`} style={{maxWidth: 952}}>
       {children}
     </div>
   )

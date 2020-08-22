@@ -46,7 +46,7 @@ function AboutSection () {
             realização de etapas presenciais com os candidatos.
           </p>
 
-          <blockquote className='rounded-lg bg-gray-200 p-6 mt-4'>
+          <blockquote className='rounded-lg bg-gray-200 p-6 mt-4 text-justify'>
             "Eu nunca imaginei que fosse fazer programação. Hoje em dia, já tenho
             em mente que quero me profissionalizar nessa área,&nbsp;
             <strong>
