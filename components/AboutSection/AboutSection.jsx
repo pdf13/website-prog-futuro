@@ -36,7 +36,7 @@ function AboutSection () {
         </div>
         <div className='w-full md:w-1/2 md:pr-8'>
           <div className='youtube-wrapper'>
-            <YouTube videoId='KWJbf_a0TMk' />
+            <YouTube videoId='rkL0SR4RGkU' />
           </div>
         </div>
         <div className='w-full md:w-1/2'>
