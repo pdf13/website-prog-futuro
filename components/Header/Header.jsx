@@ -7,6 +7,8 @@ import Container from '../Contatiner'
 
 // TODO: Remove styled-jsx dependency
 const bgStyle = css.resolve`
+  min-height: 600px;
+
   @media (max-width: 992px) {
     background-position-x: 70%;
   }s
