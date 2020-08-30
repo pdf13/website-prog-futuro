@@ -62,12 +62,14 @@ Title.propTypes = {
   children: node.isRequired,
   as: oneOf(['h1', 'h2', 'h3']).isRequired,
   className: string,
+  arrows: bool,
   light: bool
 }
 
 Title.defaultProps = {
   className: '',
-  light: false
+  light: false,
+  arrows: false
 }
 
 export default Title

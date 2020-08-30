@@ -15,7 +15,7 @@ function HowWorksSection () {
         </p>
         <ul>
           <li className='flex flex-col md:flex-row items-center mt-10'>
-            <div style={{minWidth: 152}} className='md:mr-3'>
+            <div style={{ minWidth: 152 }} className='md:mr-3'>
               <img
                 src='/static/icone-pc.png'
                 alt='computador simbolizando as aulas de programação'
@@ -30,7 +30,7 @@ function HowWorksSection () {
             </p>
           </li>
           <li className='flex flex-col md:flex-row items-center mt-10'>
-            <div style={{minWidth: 152}} className='md:mr-3'>
+            <div style={{ minWidth: 152 }} className='md:mr-3'>
               <img
                 src='/static/icone-livro.png'
                 alt='livro simbolizando as aulas de inglês'
@@ -44,7 +44,7 @@ function HowWorksSection () {
             </p>
           </li>
           <li className='flex flex-col md:flex-row items-center mt-10'>
-            <div style={{minWidth: 152}} className='md:mr-3'>
+            <div style={{ minWidth: 152 }} className='md:mr-3'>
               <img
                 src='/static/icone-engrenagem.png'
                 alt='engrenagens simbolizando o mercado de trabalho'
@@ -52,7 +52,7 @@ function HowWorksSection () {
             </div>
             <p className='text-justify'>
               <Title as='h3' className='mb-4'>O Mercado de Trabalho</Title>
-              Aprender a programar, além de desenvolver habilidades importantes, como lógica e 
+              Aprender a programar, além de desenvolver habilidades importantes, como lógica e
               resolução de problemas, abre as portas para o futuuro, afinal profissões ligadas a
               tecnologia estão entre as que mais ganham espaço no mercado. No Programadores do
               Amanhã os alunos participam de atividades preparatórias para o mercado de trabalho,
