@@ -6,7 +6,8 @@ module.exports = {
         'pa-yellow': '#FFF075',
         'pa-pink': '#FF3873',
         'pa-orange': '#F37E3A',
-        'pa-silver': '#F2F0F7'
+        'pa-silver': '#F2F0F7',
+        'pa-purple': '#27202c'
       }
     },
     inset: {

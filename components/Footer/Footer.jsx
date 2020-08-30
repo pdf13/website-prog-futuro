@@ -1,29 +1,42 @@
 import React from 'react'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container'
-
-import { wrapperStyle } from './Footer.style'
+import Container from '../Contatiner'
+import Link from 'next/link'
 
 function Footer () {
-  const { className: wrapperClassName, styles: wrapperStyles } = wrapperStyle
-
   return (
-    <div className={wrapperClassName}>
+    <div className='bg-pa-purple'>
       <Container>
-        <Row className='align-items-center'>
-          <Col xs={4} className='text-left pt-2 d-none d-md-block'>
-            <img src='/static/ch-header-left.svg' alt='setas coloridas apontando para a direita' />
-          </Col>
-          <Col md={4} className='text-center'>
-            <img src='/static/logo.png' alt='Programadores do futuro' />
-          </Col>
-          <Col xs={4} className='text-right pt-2 d-none d-md-block'>
-            <img src='/static/ch-header-right.svg' alt='setas coloridas apontando para a direita' />
-          </Col>
-        </Row>
+        <div className='flex flex-col md:flex-row'>
+          <div className='w-full sm:w-1/2 py-4 sm:py-12'>
+            <div className='flex justify-around items-center'>
+              <div>
+                <img src='/static/logo.png' alt='Programadores do futuro' />
+              </div>
+              <div>
+                <img src='/static/logo-pe-de-bibllioteca-header.png' alt='Logo da ONG Pé de Biblioteca' />
+              </div>
+            </div>
+          </div>
+          <div className='w-full sm:w-1/2 py-4 sm:py-12'>
+            <div className='flex items-center justify-evenly sm:justify-end'>
+              <div>
+                <Link href='https://www.linkedin.com/company/programadores-do-futuro/' prefetch={false}>
+                  <a>
+                    <img className='p-4' src='/static/linkedin.png' alt='Linkedin do Programadores do Amanhã' />
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='mailto:' prefetch={false}>
+                  <a>
+                    <img className='p-4' src='/static/mail.png' alt='Email do Programadores do Amanhã' />
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </Container>
-      { wrapperStyles }
     </div>
   )
 }
