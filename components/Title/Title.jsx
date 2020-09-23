@@ -1,44 +1,75 @@
 import React from 'react'
-import createComponentFromTag from 'react-create-component-from-tag-prop'
-import { node, string, oneOf } from 'prop-types'
+import { node, string, oneOf, bool } from 'prop-types'
 
-import { titleStyle, decoratedTitleStyle, H1Style, H2Style, H3Style, H4Style } from './Title.style'
+import { decoratedTitleStyle } from './Title.style'
+
+const h1Classes = 'text-5xl sm:text-6xl font-black break-all leading-tight'
+const H1 = ({ children, className, arrows }) => (
+  <h1 className={`${className} ${h1Classes}`}>{children}</h1>
+)
+
+const h2Classes = 'text-2xl sm:text-3xl font-bold'
+const H2 = ({ children, className, as, arrows }) => (
+  <h2 className={`${className} ${h2Classes}`}>{children}</h2>
+)
+
+const h3Classes = 'text-xl font-semibold'
+const H3 = ({ children, className, as, arrows }) => (
+  <h3 className={`${className} ${h3Classes}`}>{children}</h3>
+)
 
 function Title (props) {
-  const { children, as, arrows, className, ...otherProps } = props
-  const { className: titleClassName, styles: titleCSS } = titleStyle
+  const { children, arrows, as, className, light } = props
 
-  const Component = createComponentFromTag({
-    tag: as,
-    prop: 'as',
-    propsToOmit: [ 'tag' ]
-  })
+  let Component = H1
 
-  const stylesMap = {
-    h1: H1Style,
-    h2: H2Style,
-    h3: H3Style,
-    h4: H4Style
+  switch (as) {
+    case 'h1':
+      Component = H1
+      break
+
+    case 'h2':
+      Component = H2
+      break
+
+    case 'h3':
+      Component = H3
+      break
+
+    default:
+      break
   }
 
   return (
-    <Component className={`${className} ${titleClassName} ${stylesMap[as].className} ${arrows ? decoratedTitleStyle.className : ''}`} {...otherProps}>
-      { children }
-      { titleCSS }
-      { stylesMap[as].styles }
-      { decoratedTitleStyle.styles }
+    <Component
+      className={
+        `
+         flex items-center
+         ${className}
+         ${light ? 'text-white' : 'text-black'}
+         ${arrows ? decoratedTitleStyle.className : ''}
+        `
+      }
+      arrows={arrows}
+    >
+      {children}
+      {decoratedTitleStyle.styles}
     </Component>
   )
 }
 
 Title.propTypes = {
   children: node.isRequired,
-  as: oneOf(['h1', 'h2', 'h3', 'h4']).isRequired,
-  className: string
+  as: oneOf(['h1', 'h2', 'h3']).isRequired,
+  className: string,
+  arrows: bool,
+  light: bool
 }
 
 Title.defaultProps = {
-  className: ''
+  className: '',
+  light: false,
+  arrows: false
 }
 
 export default Title

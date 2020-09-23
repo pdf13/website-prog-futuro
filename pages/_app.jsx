@@ -3,6 +3,7 @@ import App from 'next/app'
 import Head from 'next/head'
 import Router from 'next/router'
 import ReactGA from 'react-ga'
+import '../styles/index.css'
 
 class MyApp extends App {
   componentDidMount () {
@@ -19,12 +20,7 @@ class MyApp extends App {
     return (
       <>
         <Head>
-          <link
-            rel='stylesheet'
-            href='https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'
-            integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS'
-            crossOrigin='anonymous'
-          />
+          <title>Programadores do amanhã</title>
           <link href='https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700' rel='stylesheet' />
         </Head>
         <style jsx global>{`

@@ -1,15 +1,15 @@
 {
     "version": 2,
     "alias": [
-        "www.programadoresdofuturo.org",
-        "programadoresdofuturo.org"
+        "www.programadoresdoamanha.org",
+        "programadoresdoamanha.org"
     ],
     "routes": [
         {
-            "src": "programadoresdofuturo.org(.*)",
+            "src": "programadoresdoamanha.org(.*)",
             "status": 301,
             "headers": {
-                "Location": "https://www.programadoresdofuturo.org$1"
+                "Location": "https://www.programadoresdoamanha.org$1"
             }
         }
     ]
