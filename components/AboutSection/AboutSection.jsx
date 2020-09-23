@@ -7,7 +7,7 @@ import YouTube from 'react-youtube'
 
 function AboutSection () {
   return (
-    <Container className='my-8 md:my-16'>
+    <Container className='my-8 md:my-16' id='sobre-o-projeto'>
       <div className='flex flex-wrap justify-start md:flex-row-reverse'>
         <div className='w-full md:w-1/2'>
           <div className=''>

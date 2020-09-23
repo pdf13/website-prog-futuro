@@ -20,6 +20,7 @@ class MyApp extends App {
     return (
       <>
         <Head>
+          <title>Programadores do amanhã</title>
           <link href='https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700' rel='stylesheet' />
         </Head>
         <style jsx global>{`

@@ -5,7 +5,7 @@ import Title from '../Title'
 
 function WhoWeAreSection () {
   return (
-    <Container className='py-8 md:py-16'>
+    <Container className='py-8 md:py-16' id='quem-somos'>
       <Title as='h2' arrows>Quem apoia o projeto</Title>
       <div>
         <Title as='h3' className='mt-12'>Parceiros</Title>
@@ -14,7 +14,7 @@ function WhoWeAreSection () {
             <Link href='https://www.instagram.com/casabaanko/' prefetch={false}>
               <a target='blank'>
                 <img src='/static/casa-banko.png' alt='Casa Banko' className='inline-block' />
-                <p className='mt-4'>Casa Baanko</p>
+                <p className='mt-4'>Casa Baanko</p> 
               </a>
             </Link>
           </li>
@@ -89,92 +89,192 @@ function WhoWeAreSection () {
         <ul className='mt-12 py-8 px-6 bg-pa-silver grid sm:grid-cols-2 gap-4 rounded'>
           <li className='flex items-center'>
             <img
-              src='https://api.adorable.io/avatars/80/andre-menezes.png'
-              className='rounded-full w-16 h-16'
-            />
-            <p className='ml-4 text-sm'>
-              André Menezes <br />
-              <em className='uppercase'>Presidente do Um pé de Biblioteca</em>
-            </p>
-          </li>
-          <li className='flex items-center'>
-            <img
-              src='https://api.adorable.io/avatars/80/barbara-alves.png'
-              className='rounded-full w-16 h-16'
-            />
-            <p className='ml-4 text-sm'>
-              Bárbara Alves <br />
-              <em className='uppercase'>Coordenadora de proojetos no Um pé de Biblioteca</em>
-            </p>
-          </li>
-          <li className='flex items-center'>
-            <img
-              src='/static/Marques.jpeg'
-              className='rounded-full w-16 h-16'
-            />
-            <p className='ml-4 text-sm'>
-              Lucas Marques <br />
-              <em className='uppercase'>Idealizador</em>
-            </p>
-          </li>
-          <li className='flex items-center'>
-            <img
-              src='https://api.adorable.io/avatars/80/juliana-tavares.png'
-              className='rounded-full w-16 h-16'
-            />
-            <p className='ml-4 text-sm'>
-              Juliana Tavares <br />
-              <em className='uppercase'>Voluntária | Mentora</em>
-            </p>
-          </li>
-          <li className='flex items-center'>
-            <img
-              src='/static/Fernanda.jpeg'
-              className='rounded-full w-16 h-16'
-            />
-            <p className='ml-4 text-sm'>
-              Fernanda Passos <br />
-              <em className='uppercase'>Voluntária | Comunicação</em>
-            </p>
-          </li>
-          <li className='flex items-center'>
-            <img
-              src='https://api.adorable.io/avatars/80/ana-cristina.png'
+              src='/static/colaboradores/ana_cristina_teixeira.jpg'
               className='rounded-full w-16 h-16'
             />
             <p className='ml-4 text-sm'>
               Ana Cristina Teixeira <br />
-              <em className='uppercase'>Voluntária | Mentora</em>
+              {/* <em className='uppercase'>Voluntária | Mentora</em> */}
             </p>
           </li>
           <li className='flex items-center'>
             <img
-              src='https://api.adorable.io/avatars/80/aurelio-favarin.png'
+              src='/static/colaboradores/andre_menezes.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              André Menezes <br />
+              {/* <em className='uppercase'>Presidente do Um pé de Biblioteca</em> */}
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/aurelio_favarin.jpg'
               className='rounded-full w-16 h-16'
             />
             <p className='ml-4 text-sm'>
               Aurélio Favarin <br />
-              <em className='uppercase'>Voluntário | Comunicação</em>
+              {/* <em className='uppercase'>Voluntário | Comunicação</em> */}
             </p>
           </li>
           <li className='flex items-center'>
             <img
-              src='/static/Cris.jpeg'
+              src='/static/colaboradores/barbara_alves.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Bárbara Alves <br />
+              {/* <em className='uppercase'>Coordenadora de projetos no Um pé de Biblioteca</em> */}
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/bruna_moreira.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Bruna Moreira <br />
+              <em className='uppercase'></em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/bruno_campos.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Bruno Campos <br />
+              <em className='uppercase'></em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/cris_landa.jpg'
               className='rounded-full w-16 h-16'
             />
             <p className='ml-4 text-sm'>
               Cristiano Landa <br />
-              <em className='uppercase'>Voluntário | Comunicação</em>
+              {/* <em className='uppercase'>Voluntário | Comunicação</em> */}
             </p>
           </li>
           <li className='flex items-center'>
             <img
-              src='/static/Lucia.jpeg'
+              src='/static/colaboradores/danielia_oliveira.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Danielia Oliveira <br />
+              <em className='uppercase'> </em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/debora_santos.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Débora Santos <br />
+              <em className='uppercase'> </em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/eduardo_moreira.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Eduardo Moreira <br />
+              <em className='uppercase'> </em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/fabio_esteves.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Fábio Esteves <br />
+              <em className='uppercase'> </em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/fernanda_passos.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Fernanda Passos <br />
+              {/* <em className='uppercase'>Voluntária | Comunicação</em> */}
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/kaique_souza.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Kaique Souza <br />
+              <em className='uppercase'> </em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/user-avatar.png'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Juliana Tavares <br />
+              {/* <em className='uppercase'>Voluntária | Mentora</em> */}
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/leonardp_vieira_neto.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Leonardo Vieira <br />
+              <em className='uppercase'> </em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/liliane_aquino.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Liliane Aquino <br />
+              <em className='uppercase'> </em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/lucas_marques.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Lucas Marques <br />
+              {/* <em className='uppercase'>Idealizador</em> */}
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/lucia_marques.jpg'
               className='rounded-full w-16 h-16'
             />
             <p className='ml-4 text-sm'>
               Lúcia Aparecida Marques <br />
-              <em className='uppercase'>Pedagoga</em>
+              {/* <em className='uppercase'>Pedagoga</em> */}
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/luiza_dias.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Luíza Dias <br />
+              <em className='uppercase'> </em>
             </p>
           </li>
           <li className='flex items-center'>
@@ -189,7 +289,7 @@ function WhoWeAreSection () {
           </li>
           <li className='flex items-center'>
             <img
-              src='/static/Marcelo.jpeg'
+              src='/static/colaboradores/marcelo_brenner.jpg'
               className='rounded-full w-16 h-16'
             />
             <p className='ml-4 text-sm'>
@@ -199,22 +299,62 @@ function WhoWeAreSection () {
           </li>
           <li className='flex items-center'>
             <img
-              src='/static/Pedro.jpeg'
+              src='/static/colaboradores/marcelo_monteiro.jpg'
               className='rounded-full w-16 h-16'
             />
             <p className='ml-4 text-sm'>
-              Pedro Dias <br />
-              <em className='uppercase'>Voluntário | Comunicação</em>
+              Marcelo Monteiroo <br />
+              <em className='uppercase'> </em>
             </p>
           </li>
           <li className='flex items-center'>
             <img
-              src='/static/Rosilaine.jpeg'
+              src='/static/colaboradores/pedro_dias.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Pedro Dias <br />
+              {/* <em className='uppercase'>Voluntário | Comunicação</em> */}
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/rose_saparta.jpg'
               className='rounded-full w-16 h-16'
             />
             <p className='ml-4 text-sm'>
               Rosilaine de Oliveira <br />
-              <em className='uppercase'>Professora de inglês</em>
+              {/* <em className='uppercase'>Professora de inglês</em> */}
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/thays_lomas.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Thays Loomas <br />
+              <em className='uppercase'> </em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/victor_salles.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Victor Salles <br />
+              <em className='uppercase'> </em>
+            </p>
+          </li>
+          <li className='flex items-center'>
+            <img
+              src='/static/colaboradores/wenderson_cardozo.jpg'
+              className='rounded-full w-16 h-16'
+            />
+            <p className='ml-4 text-sm'>
+              Wenderson Cardozo <br />
+              <em className='uppercase'> </em>
             </p>
           </li>
         </ul>

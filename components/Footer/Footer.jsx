@@ -21,14 +21,28 @@ function Footer () {
             <div className='flex items-center justify-evenly sm:justify-end'>
               <div>
                 <Link href='https://www.linkedin.com/company/programadores-do-futuro/' prefetch={false}>
-                  <a>
+                  <a target='_blank'>
                     <img className='p-4' src='/static/linkedin.png' alt='Linkedin do Programadores do Amanhã' />
                   </a>
                 </Link>
               </div>
               <div>
-                <Link href='mailto:' prefetch={false}>
-                  <a>
+                <Link href='https://www.instagram.com/umpedebiblioteca/' prefetch={false}>
+                  <a target='_blank'>
+                    <img className='p-4' src='/static/instagram.png' alt='Linkedin do Programadores do Amanhã' />
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='https://www.facebook.com/UmPedeBiblioteca' prefetch={false}>
+                  <a target='_blank'>
+                    <img className='p-4' src='/static/facebook.png' alt='Linkedin do Programadores do Amanhã' />
+                  </a>
+                </Link>
+              </div>
+              <div>
+                <Link href='mailto:contato@umpedebiblioteca.org' prefetch={false}>
+                  <a target='_blank'>
                     <img className='p-4' src='/static/mail.png' alt='Email do Programadores do Amanhã' />
                   </a>
                 </Link>

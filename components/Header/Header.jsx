@@ -7,7 +7,7 @@ import Container from '../Contatiner'
 
 // TODO: Remove styled-jsx dependency
 const bgStyle = css.resolve`
-  min-height: 600px;
+  min-height: 750px;
 
   @media (max-width: 992px) {
     background-position-x: 70%;
@@ -27,9 +27,7 @@ function Header (props) {
         </Title>
         <p className='text-lg sm:text-xl text-white leading-snug mt-2 max-w-xl'>
           Colabore com o projeto que vai multiplicar as oportunidades para
-          jovens no mercado de tecnologia. Colabore com o projeto que vai
-          multiplicar as oportunidades para jovens no mercado de
-          tecnologia.
+          jovens no mercado de tecnologia.
         </p>
         <div className='mt-6'>
           <Button href='/redirecionar?utm_source=banner-button' color='yellow'>

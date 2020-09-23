@@ -7,10 +7,10 @@ import Carousel from '../Carousel'
 function HowWorksSection () {
   return (
     <div className='bg-pa-silver'>
-      <Container className='py-8 md:py-16'>
+      <Container className='py-8 md:py-16' id='como-funciona'>
         <Title arrows as='h2'>Como funciona?</Title>
         <p className='mt-6 md:mt-10 mb-3'>
-           Os alunos recebem capacitação profissional por meio do ensino de programação, inglês
+           Os alunos selecionados recebem capacitação profissional por meio do ensino de programação, inglês
            e acompanhamento para ajudá-los a se prepararem para o mercado de tecnologia.
         </p>
         <ul>
