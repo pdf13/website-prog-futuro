@@ -21,6 +21,7 @@ class MyApp extends App {
       <>
         <Head>
           <title>Programadores do amanhã</title>
+          <link rel="shortcut icon" href="/static/favicon.ico" />
           <link href='https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700' rel='stylesheet' />
         </Head>
         <style jsx global>{`

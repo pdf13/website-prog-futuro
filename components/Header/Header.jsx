@@ -26,17 +26,13 @@ function Header (props) {
           Programadores do amanhã
         </Title>
         <p className='text-lg sm:text-xl text-white leading-snug mt-2 max-w-xl'>
-          Colabore com o projeto que vai multiplicar as oportunidades para
-          jovens no mercado de tecnologia.
+          Multiplicamos oportunidades para jovens negros no mercado de tecnologia.
         </p>
         <div className='mt-6'>
           <Button href='/redirecionar?utm_source=banner-button' color='yellow'>
-            Quero colaborar!
+            Quero doar!
           </Button>
         </div>
-      </Container>
-      <Container className='py-8'>
-        <img src='/static/logo-pe-de-bibllioteca-header.png' alt='Logo da ONG Pé de Biblioteca' />
       </Container>
       {bgStyles}
     </div>
