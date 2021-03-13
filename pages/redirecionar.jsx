@@ -5,7 +5,7 @@ import RedirectBox from '../components/RedirectBox'
 function Redirecionar() {
     useEffect(() => {
         setTimeout(() => {
-            window.location.href = 'http://risu.com.br/doar/programadores-do-futuro'
+            window.location.href = 'https://programadoresdoamanha.apoiar.co/'
         }, 3000)
     }, [])
 

@@ -14,26 +14,24 @@ function RedirectBox() {
                 <div className={progressClassName}>
                     <span className={progressInnerClassName} />
                 </div>
-                <div className="container-fluid text-center" style={{padding: '32px 32px 64px'}}>
-                    <div className="row align-items-center logos">
-                        <div className="col-sm">
-                            <img src='/static/logo-laranja.png' alt='Logomarca Programadores do Futuro' />
+                <div className="text-center" style={{padding: "32px 32px 64px"}}>
+                    <div className="grid grid-cols-2 gap-4 items-center mb-5">
+                        <div className="text-center">
+                            <img src="/static/logo-laranja.png" classNam="m-auto" alt="Logomarca Programadores do Futuro" />
                         </div>
-                        <div className="col-sm">
-                            <img src='/static/logo-risu.png' alt='Logomarca Programadores do Futuro' />
+                        <div className="text-center">
+                            <img src="/static/logo-risu.png" classNam="m-auto" alt="Logomarca Programadores do Futuro" />
                         </div>
                     </div>
-                    <div className='row justify-content-center mt-5 info'>
-                        <div className="col-sm-10">
-                            Estamos te redirecionando para a página da Risu,
-                            onde você poderá concluir sua colaboração com o Programadores do Futuro. 
-                        </div>
+                    <div className="mt-10">
+                        Estamos te redirecionando para a página da Risu,
+                        onde você poderá concluir sua colaboração com o Programadores do Amanhã. 
                     </div>
                 </div>
             </div>
-            <div className='text-center mt-4'>
-                <p className='text-white mb-0'>Não foi redirecionado automaticamente?</p>
-                <a style={{color: '#F5DE67'}} href='http://risu.com.br/doar/programadores-do-futuro'>Clique e conclua a sua colaboração</a>
+            <div className="text-center mt-4 text-sm">
+                <p className="text-white mb-0">Não foi redirecionado automaticamente?</p>
+                <a style={{color: '#F5DE67'}} href="http://risu.com.br/doar/programadores-do-futuro">Clique e conclua a sua colaboração</a>
             </div>
             {cardCSS}
             {progressCSS}

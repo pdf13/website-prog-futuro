@@ -32,9 +32,9 @@ function Navbar () {
           className={`${!open ? 'hidden' : ''} w-full block flex-grow lg:flex lg:items-center lg:w-auto text-left lg:text-right`}
         >
           <div className='text-sm lg:flex-grow'>
-            <Link href='#sobre-o-projeto'>
+            <Link href='#o-que-fazemos'>
               <a className='block hover:text-pa-pink hover:font-bold mt-4 lg:inline-block lg:mt-0 text-base text-white mr-4'>
-                O PROJETO
+                O QUE FAZEMOS
               </a>
             </Link>
             <Link href='#como-funciona'>
@@ -42,12 +42,7 @@ function Navbar () {
                 COMO FUNCIONA
               </a>
             </Link>
-            <Link href='#quem-somos'>
-              <a className='block hover:text-pa-pink hover:font-bold mt-4 lg:inline-block lg:mt-0 text-base text-white mr-4'>
-                QUEM SOMOS
-              </a>
-            </Link>
-            <Link href='/redirecionar?utm_source=navbar'>
+            <Link href='#colaborar'>
               <a className='block hover:text-pa-pink hover:font-bold mt-4 lg:inline-block lg:mt-0 text-base text-white'>
                 COLABORAR
               </a>
